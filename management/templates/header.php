@@ -135,7 +135,7 @@ $coralURL = $util->getCORALURL();
                                 }
                                 closedir($dh);
                             }
-                        }else {
+                        } else {
                             echo "<br>"._("Invalid translation route!");
                         }
                         // Get language of navigator
@@ -215,6 +215,20 @@ echo '</div>';
         <div class="main-menu-link">
             <img src="images/menu/icon-new-doc.png" />
             <span><?php echo _("New Document");?></span>
+        </div>
+    </a>
+
+    <a href='link_builder.php'>
+        <div class="main-menu-link">
+            <!--<img src="images/menu/icon-new-doc.png" />-->
+            <span><?php echo _("Link Builder");?></span>
+        </div>
+    </a>
+
+    <a href='subject_guide_builder.php'>
+        <div class="main-menu-link">
+            <!--<img src="images/menu/icon-new-doc.png" />-->
+            <span><?php echo _("Subject Guide Builder");?></span>
         </div>
     </a>
 
