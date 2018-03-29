@@ -171,7 +171,7 @@ $result = mysqli_query($link, $query) or die(_("Bad Query Failure"));
 			resArray += ", 'poff'";
 		}
 
-		if (document.getElementById('newGraphic1').checked == true) {
+		/*if (document.getElementById('newGraphic1').checked == true) {
 			resArray += "";
 		} else if (document.getElementById('newGraphic2').checked == true) {
 			resArray += ", 'new_graphic'";
@@ -181,7 +181,7 @@ $result = mysqli_query($link, $query) or die(_("Bad Query Failure"));
 			resArray += "";
 		} else if (document.getElementById('trialGraphic2').checked == true) {
 			resArray += ", 'trial_graphic'";
-		}
+		}*/
 
 		if (document.getElementById('openStyle1').checked == true) {
 			resArray += "); \?\>";
@@ -276,7 +276,7 @@ EZProxy:<br />
 <input type='radio' name='ezProxy' id='ezProxy2'>Disabled</input>
 <br /><br />
 
-New Graphic:<br />
+<!-- New Graphic:<br />
 <input type='radio' name='newGraphic' id='newGraphic1' checked>Enabled</input>
 <input type='radio' name='newGraphic' id='newGraphic2'>Disabled</input>
 <br /><br />
@@ -284,7 +284,7 @@ New Graphic:<br />
 Trial Graphic:<br />
 <input type='radio' name='trialGraphic' id='trialGraphic1' checked>Enabled</input>
 <input type='radio' name='trialGraphic' id='trialGraphic2'>Disabled</input>
-<br /><br />
+<br /><br /> -->
 
 Open Style:<br />
 <input type='radio' name='openStyle' id='openStyle1' checked>New Tab</input>

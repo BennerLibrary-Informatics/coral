@@ -113,13 +113,13 @@ $result = mysqli_query($link, $query) or die(_("Bad Query Failure"));
 			resArray += ", 'none'";
 		}
 
-		if (document.getElementById('newGraphic1').checked == true) {
+		/*if (document.getElementById('newGraphic1').checked == true) {
 			resArray += ", 'new_graphic'";
 		} 
 
 		if (document.getElementById('trial1').checked == true) {
 			resArray += ", 'trial_graphic'";
-		}
+		}*/
 
 		if (document.getElementById('ezProxy1').checked == true) {
 			resArray += "); \?\>";
@@ -189,17 +189,27 @@ EZProxy:<br />
 <input type='radio' name='ezProxy' id='ezProxy2'>Disabled</input>
 <br /><br />
 
-<!-- if this is checked, it looks for the field in the DB that says when it stops being new. If it is before that date, then the new grapic shows up -->
-New Graphic:<br />
+<!-- if this is checked, it looks for the field in the DB that says when it stops being new. If it is before that date, then the new grapic shows up 
+
+
+
+
+!IMPORTANT TODO: The only thing not working on these two is that they need to be formatted to fit with both link-list irs and without link list irs. These styles can be found in page-part.less
+
+
+
+
+-->
+<!-- New Graphic:<br />
 <input type='radio' name='newGraphic' id='newGraphic1' checked>Yes</input>
 <input type='radio' name='newGraphic' id='newGraphic2'>No</input>
-<br /><br />
+<br /><br /> -->
 
 <!-- if this is checked, it looks for the field in the DB that determines if it is a trial or not then it puts the graphic on if it is -->
-Trial Graphic:<br />
+<!-- Trial Graphic:<br />
 <input type='radio' name='trial' id='trial1' checked>Yes</input>
 <input type='radio' name='trial' id='trial2'>No</input>
-<br /><br /><br /><br />
+<br /><br /> --><br /><br />
 
 Link:
 <textarea id='link' rows='4' cols= '100'>
